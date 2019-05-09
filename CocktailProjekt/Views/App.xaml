@@ -7,7 +7,10 @@
         <Style TargetType="Window" x:Key="myWindow">
             <Setter Property="Background">
                 <Setter.Value>
-                    <ImageBrush ImageSource="bin/Debug/Hintergrund.jpg" Opacity="0.6"/>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFFDC88F" Offset="0"/>
+                        <GradientStop Color="#FFF87676" Offset="1"/>
+                    </LinearGradientBrush>
                 </Setter.Value>
             </Setter>
         </Style>
@@ -18,8 +21,6 @@
             <Setter Property="FontWeight" Value="Bold"/>
         </Style>
         <Style TargetType="Label" x:Key="unterueberschriftLabel">
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="FontSize" Value="12pt"/>
             <Setter Property="FontWeight" Value="Bold"/>
         </Style>
@@ -28,11 +29,15 @@
             <Setter Property="TextAlignment" Value="Center"/>
             <Setter Property="Padding" Value="10"/>
             <Setter Property="FontSize" Value="12pt"/>
-            <Setter Property="Background" Value="#FFA1A099"/>
+            <Setter Property="Background" Value="#FFEFCEC2"/>
         </Style>
         <Style TargetType="Button" x:Key="myButton">
-            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Margin" Value="5"/>
             <Setter Property="FontSize" Value="12pt"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+        <Style TargetType="ListBox" x:Key="myListBox">
+            <Setter Property="BorderThickness" Value="2"/>
         </Style>
     </Application.Resources>
 </Application>

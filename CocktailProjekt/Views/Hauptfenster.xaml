@@ -22,14 +22,18 @@
 
         <Label Content="Cocktail Mixer" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource ueberschriftLabel}"/>
         <Image Source="bin/Debug/CocktailBild.png" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <TextBlock Name="textBlockInfo" Text="Willkommen!" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource myTextBlock}"/>
+        <TextBlock Name="textBlockInfo" Text="Willkommen!" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource myTextBlock}" Opacity="0.99"/>
 
-        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Bottom">
+        <Label Content="Hinzufügen:" Grid.Row="2" Grid.Column="0" Style="{StaticResource unterueberschriftLabel}"/>
+        
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center">
             <Button Name="buttonAlkohol" Content="Alkohol" Style="{StaticResource myButton}"/>
             <Button Name="buttonSaft" Content="Saft" Style="{StaticResource myButton}"/>
             <Button Name="buttonDeko" Content="Deko" Style="{StaticResource myButton}"/>
         </StackPanel>
+        
         <ListBox Name="listBoxMix" Grid.Row="2" Grid.Column="1"/>
+        
         <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Vertical" VerticalAlignment="Bottom">
             <Button Name="buttonEntfernen" Content="Entfernen" Style="{StaticResource myButton}"/>
             <Button Name="buttonMixen" Content="Mixen" Style="{StaticResource myButton}"/>
