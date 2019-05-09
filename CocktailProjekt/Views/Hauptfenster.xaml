@@ -15,22 +15,23 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="264*"/>
+            <ColumnDefinition Width="264*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="245*"/>
         </Grid.ColumnDefinitions>
 
-        <Label Content="Cocktail Mixer" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource ueberschriftLabel}"/>
-        <Image Source="bin/Debug/CocktailBild.png" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <TextBlock Name="textBlockInfo" Text="Willkommen!" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource myTextBlock}"/>
+        <Label Content="Cocktail Mixer" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Style="{StaticResource ueberschriftLabel}"/>
+        <Image Source="C:\Users\Jenny\Source\Repos\Cocktail-Projekt\CocktailProjekt\Views\bin\Debug\CocktailBild.png" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <TextBlock Name="textBlockInfo" Text="Willkommen!" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Style="{StaticResource myTextBlock}"/>
 
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Bottom">
-            <Button Name="buttonAlkohol" Content="Alkohol" Style="{StaticResource myButton}"/>
+            <Button Name="buttonAlkohol" Content="Alkohol" Style="{StaticResource myButton}" Template="{DynamicResource ButtonTemplate}"/>
             <Button Name="buttonSaft" Content="Saft" Style="{StaticResource myButton}"/>
             <Button Name="buttonDeko" Content="Deko" Style="{StaticResource myButton}"/>
         </StackPanel>
         <ListBox Name="listBoxMix" Grid.Row="2" Grid.Column="1"/>
-        <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Vertical" VerticalAlignment="Bottom">
+        <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Vertical" VerticalAlignment="Bottom" Grid.ColumnSpan="2">
             <Button Name="buttonEntfernen" Content="Entfernen" Style="{StaticResource myButton}"/>
             <Button Name="buttonMixen" Content="Mixen" Style="{StaticResource myButton}"/>
         </StackPanel>
