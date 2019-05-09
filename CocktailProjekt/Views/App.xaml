@@ -4,6 +4,34 @@
              xmlns:local="clr-namespace:Views"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Window" x:Key="myWindow">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFD4CBC1" Offset="0"/>
+                        <GradientStop Color="#FFF88E7A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Label" x:Key="ueberschriftLabel">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="20pt"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="Label" x:Key="unterueberschriftLabel">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="12pt"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="myTextBlock">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontSize" Value="12pt"/>
+            <Setter Property="Background" Value="#FFA1A099"/>
+        </Style>
     </Application.Resources>
 </Application>

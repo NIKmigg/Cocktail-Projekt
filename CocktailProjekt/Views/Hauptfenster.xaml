@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Views"
         mc:Ignorable="d"
+        Style="{StaticResource myWindow}"
         Title="Hauptfenster" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Cocktail Mixer" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource ueberschriftLabel}"/>
+        <Image Source="bin/Debug/CocktailBild.png" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBlock Name="textBlockInfo" Text="Willkommen!" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource myTextBlock}"/>
+
+        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Bottom">
+            <Button Name="buttonAlkohol" Content="Alkohol"/>
+            <Button Name="buttonSaft" Content="Alkohol"/>
+        </StackPanel>
+        <ListBox Name="listBoxMix" Grid.Row="2" Grid.Column="1"/>
     </Grid>
 </Window>
