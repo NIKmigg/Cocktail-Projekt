@@ -25,9 +25,14 @@
         <TextBlock Name="textBlockInfo" Text="Willkommen!" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Style="{StaticResource myTextBlock}"/>
 
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Bottom">
-            <Button Name="buttonAlkohol" Content="Alkohol"/>
-            <Button Name="buttonSaft" Content="Alkohol"/>
+            <Button Name="buttonAlkohol" Content="Alkohol" Style="{StaticResource myButton}"/>
+            <Button Name="buttonSaft" Content="Saft" Style="{StaticResource myButton}"/>
+            <Button Name="buttonDeko" Content="Deko" Style="{StaticResource myButton}"/>
         </StackPanel>
         <ListBox Name="listBoxMix" Grid.Row="2" Grid.Column="1"/>
+        <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Vertical" VerticalAlignment="Bottom">
+            <Button Name="buttonEntfernen" Content="Entfernen" Style="{StaticResource myButton}"/>
+            <Button Name="buttonMixen" Content="Mixen" Style="{StaticResource myButton}"/>
+        </StackPanel>
     </Grid>
 </Window>
