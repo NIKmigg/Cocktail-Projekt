@@ -14,7 +14,7 @@ namespace Model
 
         public Data()
         {
-            con = new OleDbConnection(Properties.Settings.Default.ConString);
+            con = new OleDbConnection(Properties.Settings1.Default.ConString);
         }
 
         public bool OpenConnection()
@@ -35,23 +35,23 @@ namespace Model
         {
             DataSet dsAlkohole = new DataSet();
             OleDbDataAdapter adapter = new OleDbDataAdapter("Select * from Alkohol", con);
-            adapter.Fill(dsAlkohole, "Alkohole");
+            adapter.Fill(dsAlkohole, "Alkohol");
             return dsAlkohole;
         }
 
         public DataSet GetSaefte()
         {
             DataSet dsSaefte = new DataSet();
-            OleDbDataAdapter adapter = new OleDbDataAdapter("Select * from Saefte", con);
-            adapter.Fill(dsSaefte, "Alkohole");
+            OleDbDataAdapter adapter = new OleDbDataAdapter("Select * from Saft", con);
+            adapter.Fill(dsSaefte, "Saft");
             return dsSaefte;
         }
 
         public DataSet GetDekos()
         {
             DataSet dsDekos = new DataSet();
-            OleDbDataAdapter adapter = new OleDbDataAdapter("Select * from Alkohol", con);
-            adapter.Fill(dsDekos, "Alkohole");
+            OleDbDataAdapter adapter = new OleDbDataAdapter("Select * from Deko", con);
+            adapter.Fill(dsDekos, "Deko");
             return dsDekos;
         }
     }

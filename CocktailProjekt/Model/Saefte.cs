@@ -11,25 +11,25 @@ namespace Model
     public class Saefte
     {
         private Data data = new Data();
-        private ObservableCollection<Saefte> listSaefte;
+        private ObservableCollection<Saft> listSaft;
 
-        public ObservableCollection<Saefte> ListSaefte { get => listSaefte; set => listSaefte = value; }
+        public ObservableCollection<Saft> ListSaft { get => listSaft; set => listSaft = value; }
 
         public Saefte()
         {
-            ListSaefte = new ObservableCollection<Saefte>();
-            DataSet ds = data.GetAlkohole();
+            listSaft = new ObservableCollection<Saft>();
+            DataSet ds = data.GetSaefte();
             DataTable dt = ds.Tables[0];
             DataTableReader reader = dt.CreateDataReader();
             while (reader.Read())
             {
-                Saft s = mkSaefte(reader);
-                listSaefte.Add(s);
+                Saft s = mkSaft(reader);
+                listSaft.Add(s);
             }
             reader.Close();
         }
 
-        private Saft mkSaefte(DataTableReader reader)
+        private Saft mkSaft(DataTableReader reader)
         {
             Saft s = new Saft();
 
