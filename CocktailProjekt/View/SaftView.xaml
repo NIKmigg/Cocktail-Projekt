@@ -1,0 +1,23 @@
+﻿<Window x:Class="View.SaftView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Title="SaftView" Height="370.71" Width="525" FontFamily="Dubai" FontSize="14">
+    <Grid Margin="0,0,0,-2">
+        <ComboBox Name="ComboBoxAlkohol" HorizontalAlignment="Left" Height="28" Margin="165,27,0,0" VerticalAlignment="Top" Width="254"/>
+        <Label Content="Auswahl:" HorizontalAlignment="Left" Height="33" Margin="68,22,0,0" VerticalAlignment="Top" Width="76" FontSize="18"/>
+        <Button Style="{StaticResource Säfte}" x:Name="ButtonHinzufuegen" Content="hinzufügen" HorizontalAlignment="Left" Height="26" Margin="165,82,0,0" VerticalAlignment="Top" Width="192"/>
+        <Button Style="{StaticResource Säfte}" x:Name="ButtonEntfernen" Content="entfernen" HorizontalAlignment="Left" Height="26" Margin="305,123,0,0" VerticalAlignment="Top" Width="192"/>
+        <ListBox x:Name="ListBoxAlkoholliste" HorizontalAlignment="Left" Height="125" Margin="202,165,0,0" VerticalAlignment="Top" Width="295" SelectionChanged="ListBoxAlkoholliste_SelectionChanged"/>
+        <Image HorizontalAlignment="Left" Height="106" Margin="27,136,0,0" VerticalAlignment="Top" Width="154" RenderTransformOrigin="0.494,0.712">
+            <Image.Source>
+                <BitmapImage UriSource="bin\Debug\Säfte.jpg"/>
+            </Image.Source>
+        </Image>
+        <Button Style="{StaticResource Säfte}" x:Name="ButtonUebernehmen" Content="übernehmen" HorizontalAlignment="Left" Height="26" Margin="43,264,0,0" VerticalAlignment="Top" Width="130"/>
+
+    </Grid>
+</Window>
