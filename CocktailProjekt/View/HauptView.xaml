@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Style="{StaticResource myWindow}"
+        Style="{StaticResource hauptWindow}"
         Title="HauptView" Height="492.782" Width="733.451">
     <Grid>
         <Label Content="Cocktail Mixer" Style="{StaticResource ueberschriftLabel}" Margin="14,-7,0,0" RenderTransformOrigin="0.5,0.5" Height="143" VerticalAlignment="Top" HorizontalAlignment="Left" Width="277" >
@@ -18,7 +18,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Style="{StaticResource myLabel2}" Content="Tob dich aus!" Margin="182,94,0,0" RenderTransformOrigin="0.754,0.955" Height="31" VerticalAlignment="Top" HorizontalAlignment="Left" Width="109" />
+        <Label Style="{StaticResource unterueberschriftLabel}" Content="Tob dich aus!" Margin="182,94,0,0" RenderTransformOrigin="0.754,0.955" Height="31" VerticalAlignment="Top" HorizontalAlignment="Left" Width="109" />
         <Button x:Name="buttonAlkohol" Content="Alkohol" Command="{Binding ButtonCommand}" Style="{StaticResource myButton}" Template="{DynamicResource ButtonTemplate}" Margin="10,165,0,0" HorizontalAlignment="Left" Width="118" Height="40" VerticalAlignment="Top" Click="buttonAlkohol_Click"/>
         <Button x:Name="buttonSaft" Content="Saft" Style="{StaticResource myButton}" Template="{DynamicResource ButtonTemplate}" Margin="152,165,0,0" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="118" Click="buttonSaft_Click"/>
         <Button x:Name="buttonDeko" Content="Deko" Style="{StaticResource myButton}" Template="{DynamicResource ButtonTemplate}" Margin="291,165,0,0" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="117" Click="buttonDeko_Click"/>

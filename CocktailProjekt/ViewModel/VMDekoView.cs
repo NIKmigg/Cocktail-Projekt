@@ -29,7 +29,7 @@ namespace ViewModel
             this.ButtonHinzufuegen = new UserCommand(Hinzufuegen);
             this.ButtonEntfernen = new UserCommand(Entfernen);
             this.ButtonUebernehmen = new UserCommand(Uebernehmen);
-            dekoliste = new Dekos();
+            dekoliste = new Dekos(); 
         }
 
         private void Uebernehmen(object obj)

@@ -5,25 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
+        Style="{StaticResource restWindow}"
         Title="AlkoholView" Height="370.71" Width="525" FontFamily="Dubai" FontSize="14">
-    <Window.Resources>
-        <Color x:Key="Color1">White</Color>
-    </Window.Resources>
-    <Window.Background>
-        <SolidColorBrush Color="{DynamicResource Color1}"/>
-    </Window.Background>
     <Grid Margin="0,0,0,-2">
         <ComboBox Name="ComboBoxAlkohol" HorizontalAlignment="Left" Height="28" Margin="165,27,0,0" VerticalAlignment="Top" Width="254"/>
         <Label Content="Auswahl:" HorizontalAlignment="Left" Height="33" Margin="68,22,0,0" VerticalAlignment="Top" Width="76" FontSize="18"/>
-        <Button Style="{StaticResource Alkohol}" x:Name="ButtonHinzufuegen" Content="hinzufügen" HorizontalAlignment="Left" Height="26" Margin="165,82,0,0" VerticalAlignment="Top" Width="192"/>
-        <Button Style="{StaticResource Alkohol}" x:Name="ButtonEntfernen" Content="entfernen" HorizontalAlignment="Left" Height="26" Margin="43,122,0,0" VerticalAlignment="Top" Width="192" FontFamily="Dubai"/>
+        <Button Template="{DynamicResource ButtonTemplateAlkohol}" x:Name="ButtonHinzufuegen" Content="hinzufügen" HorizontalAlignment="Left" Height="26" Margin="146,82,0,0" VerticalAlignment="Top" Width="192"/>
+        <Button Template="{DynamicResource ButtonTemplateAlkohol}" x:Name="ButtonEntfernen" Content="entfernen" HorizontalAlignment="Left" Height="26" Margin="43,122,0,0" VerticalAlignment="Top" Width="192" FontFamily="Dubai"/>
         <ListBox x:Name="ListBoxAlkoholliste" HorizontalAlignment="Left" Height="125" Margin="43,167,0,0" VerticalAlignment="Top" Width="295"/>
         <Image HorizontalAlignment="Left" Height="165" Margin="357,82,0,0" VerticalAlignment="Top" Width="150">
             <Image.Source>
-                <BitmapImage UriSource="bin\Debug\AlkoholCocktail.jpg"/>
+                <BitmapImage UriSource="C:\Users\Niklas Miggenrieder\Desktop\Schule\C#\Repository\CocktailProjekt\View\bin\Debug\AlkoholCocktail.jpg"/>
             </Image.Source>
         </Image>
-        <Button Style="{StaticResource Alkohol}" x:Name="ButtonUebernehmen" Content="übernehmen" HorizontalAlignment="Left" Height="26" Margin="363,266,0,0" VerticalAlignment="Top" Width="130"/>
+        <Button Template="{DynamicResource ButtonTemplateAlkohol}" x:Name="ButtonUebernehmen" Content="übernehmen" HorizontalAlignment="Left" Height="26" Margin="363,266,0,0" VerticalAlignment="Top" Width="130"/>
 
     </Grid>
 </Window>
