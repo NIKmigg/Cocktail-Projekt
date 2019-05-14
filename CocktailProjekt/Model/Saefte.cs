@@ -35,7 +35,7 @@ namespace Model
 
             s.Id = reader.GetInt32(0);
             s.Bezeichnung = reader.GetString(1);
-            s.Preis = reader.GetDecimal(3);
+            s.Preis = reader.GetDecimal(2);
 
             return s;
         }

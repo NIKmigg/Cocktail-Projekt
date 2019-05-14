@@ -12,14 +12,14 @@
         <vm:VMDekoView></vm:VMDekoView>
     </Window.DataContext>
     <Grid Margin="0,0,0,-2">
-        <ComboBox ItemsSource="{Binding Path=Dekoliste}" Name="ComboBoxAlkohol" HorizontalAlignment="Left" Height="28" Margin="165,27,0,0" VerticalAlignment="Top" Width="254"/>
+        <ComboBox ItemsSource="{Binding Path=Dekoliste}" Name="ComboBoxDeko" HorizontalAlignment="Left" Height="28" Margin="165,27,0,0" VerticalAlignment="Top" Width="254"/>
         <Label Content="Auswahl:" HorizontalAlignment="Left" Height="33" Margin="68,22,0,0" VerticalAlignment="Top" Width="76" FontSize="18"/>
         <Button Template="{DynamicResource ButtonTemplateDeko}" x:Name="ButtonHinzufuegen" Content="hinzufügen" HorizontalAlignment="Left" Height="26" Margin="34,81,0,0" VerticalAlignment="Top" Width="192"/>
         <Button Template="{DynamicResource ButtonTemplateDeko}" x:Name="ButtonEntfernen" Content="entfernen" HorizontalAlignment="Left" Height="26" Margin="137,129,0,0" VerticalAlignment="Top" Width="192"/>
-        <ListBox x:Name="ListBoxAlkoholliste" HorizontalAlignment="Left" Height="125" Margin="34,182,0,0" VerticalAlignment="Top" Width="295"/>
+        <ListBox x:Name="ListBoxDekoliste" HorizontalAlignment="Left" Height="125" Margin="34,182,0,0" VerticalAlignment="Top" Width="295"/>
         <Image HorizontalAlignment="Left" Height="181" Margin="346,69,0,0" VerticalAlignment="Top" Width="147" RenderTransformOrigin="0.494,0.712">
             <Image.Source>
-                <BitmapImage UriSource="C:\Users\Niklas Miggenrieder\Desktop\Schule\C#\Repository\CocktailProjekt\View\bin\Debug\Deko.jpg"/>
+                <BitmapImage UriSource="C:\Users\Jenny\source\repos\Cocktail-Projekt\CocktailProjekt\View\bin\Debug\Deko.jpg"/>
             </Image.Source>
         </Image>
         <Button x:Name="ButtonUebernehmen" Content="übernehmen" Template="{DynamicResource ButtonTemplateDeko}" HorizontalAlignment="Left" Height="26" Margin="360,281,0,0" VerticalAlignment="Top" Width="130"/>

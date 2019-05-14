@@ -25,6 +25,8 @@
         <ListBox x:Name="listBoxMix"  Template="{DynamicResource ListBoxTemplate}"  Margin="10,221,0,0" HorizontalAlignment="Left" Width="398" Height="164" VerticalAlignment="Top"/>
         <Button x:Name="buttonEntfernen" Content="Entfernen" Style="{StaticResource myButton}" Template="{DynamicResource ButtonTemplate}" Margin="10,400,0,0" Height="47" VerticalAlignment="Top" HorizontalAlignment="Left" Width="93"/>
         <Button x:Name="buttonMixen" Content="Mixen" Style="{StaticResource myButton}"  Template="{DynamicResource ButtonTemplate}" Margin="254,400,0,0" Height="47" VerticalAlignment="Top" HorizontalAlignment="Left" Width="154"/>
-
+        <TextBox x:Name="txtBoxCocktailname" HorizontalAlignment="Left" Height="22" Margin="152,425,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
+        <!--  Style="{DynamicResource TextBoxTemplate2}"  -->
+        <Label Content=" Cocktailname:" HorizontalAlignment="Left" Height="30" Margin="142,400,0,0" VerticalAlignment="Top" Width="106" Foreground="White" FontWeight="bold"/>
     </Grid>
 </Window>
